@@ -1,0 +1,90 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Women Cloths"
+    },
+    {
+      "id": 2,
+      "name": "Mens Cloths"
+    },
+    {
+      "id": 3,
+      "name": "Children Cloths"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "type": 0,
+      "name": "Dress",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "type": 0,
+      "name": "Short Dress",
+      "price": 80
+    },
+    {
+      "id": 3,
+      "categoryId": 2,
+      "type": 1,
+      "name": "Long Shirt",
+      "price": 80
+    },
+    {
+      "id": 4,
+      "categoryId": 2,
+      "type": 1,
+      "name": "T-shirt",
+      "price": 50
+    },
+    {
+      "id": 5,
+      "categoryId": 2,
+      "type": 2,
+      "name": "Long Pants",
+      "price": 130
+    },
+    {
+      "id": 6,
+      "categoryId": 3,
+      "type": 2,
+      "name": "Short Pants",
+      "price": 90
+    }
+  ],
+  "Cart": [
+    {
+      "amount": 5,
+      "productId": 1,
+      "userId": null,
+      "date": null,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "productId": 5,
+      "amount": 1,
+      "userId": null,
+      "date": null
+    },
+    {
+      "productId": 3,
+      "amount": 1,
+      "date": null,
+      "userId": null,
+      "id": 3
+    },
+    {
+      "productId": 4,
+      "amount": 1,
+      "date": null,
+      "userId": null,
+      "id": 4
+    }
+  ]
+}
