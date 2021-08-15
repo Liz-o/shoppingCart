@@ -1,0 +1,26 @@
+<!-- <div class="nav_menu"> -->
+<!-- <a [routerLink]="./about" >about</a>
+    <a [routerLink]="./contact" >contact</a>  -->
+<!-- <a routerLink="products" >Products</a>
+</div> -->
+
+<mat-toolbar color="primary">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      
+    </button> -->
+    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    <!-- #enddocregion mat-menu-trigger-for -->
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="products">Home</button>
+        <button mat-menu-item routerLink="about">About</button>
+        <button mat-menu-item routerLink="contact">Contact</button>
+    </mat-menu>
+    <span routerLink="products">My Shop</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>

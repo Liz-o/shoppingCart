@@ -1,0 +1,36 @@
+<app-product [products]=products (newItemEvent)="addProduct($event)"(removeItemEvent)="addProduct($event)"  [catName]=catName></app-product>
+
+<!-- <h1>Products</h1> -->
+
+<!-- <ol>
+    <li *ngFor="let prod of products">
+        <span><img src="https://picsum.photos/id/{{prod.id}}/200/300"></span> &nbsp;&nbsp;
+        <span>Product Id : {{prod.id}}</span> &nbsp;&nbsp;
+        <span>Product Name : {{prod.name}}</span> &nbsp;&nbsp;
+        <span>Product Category : {{prod.categoryId}</span> &nbsp;&nbsp;
+        <span>Product Type : {{prod.type}}</span> &nbsp;&nbsp;
+        <span>Product Price : {{prod.price}}</span> &nbsp;&nbsp;
+        <button (click)="addProduct(prod)">Add to cart</button>
+        <hr>
+    </li>
+</ol> -->
+
+<!-- <br>
+<app-cart></app-cart>  -->
+
+<!-- 
+<h1>My Cart Products</h1>
+
+<ol>
+    <li *ngFor="let p of myCart">
+        <span><img src="https://picsum.photos/id/{{p.id}}/200/300"></span> &nbsp;&nbsp;
+        <span>Product Id : {{p.id}}</span> &nbsp;&nbsp;
+        <span>Product Name : {{p.name}}</span> &nbsp;&nbsp;
+        <span>Product Category : {{p.categoryId}}</span> &nbsp;&nbsp;
+        <span>Product Type : {{p.type}}</span> &nbsp;&nbsp;
+        <span>Product Price : {{p.price}}</span> &nbsp;&nbsp;
+        <button (click)="addProduct(p)">Add to cart</button>
+        <button (click)="removeProduct(p)">Remove from cart</button>
+        <hr>
+    </li>
+</ol> -->

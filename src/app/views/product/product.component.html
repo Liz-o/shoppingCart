@@ -1,0 +1,52 @@
+<h1 style="font-size: xx-large;color:#c2185b">{{catName}}</h1><br>
+<!-- <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col" *ngFor="let prod of products">
+            <div class="card">
+                <img class="card-img-top" src="https://picsum.photos/id/{{prod.id}}/80/80">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Product Name :<h3> {{prod.name}}</h3>
+                        </li>
+                        <li class="list-group-item">Product Price :<h5> {{prod.price}}</h5>
+                        </li>
+                        <li class="list-group-item">Product Id : {{prod.id}}</li>
+                        <li class="list-group-item">Product Category : {{prod.categoryId}}</li>
+                        <li class="list-group-item">Product Type : {{prod.type}}</li>
+                        <li class="list-group-item"><button (click)="addProduct(prod)">Add to cart</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <mat-card class="example-card card" *ngFor="let prod of products" style="margin: 5px;">
+            <mat-card-header>
+                <!-- <div mat-card-avatar class="example-header-image"></div> -->
+                <mat-card-title>Product Name :<span style="font-size: xx-large;"> {{prod.name}}</span>
+                </mat-card-title>
+                <mat-card-subtitle>Product Price :<span style="font-size: x-large;color: hotpink;">
+                        {{prod.price}}</span>
+                </mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://picsum.photos/id/{{prod.id}}/80/80" alt="image of {{prod.name}}">
+            <mat-card-content>
+                <p>
+                    Product Category : {{prod.categoryId}}<br>
+                    Product Type : {{prod.type}}
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <div style="text-align: center;">
+                    <button mat-button (click)="addProduct(prod)" title="Add to cart">Add</button>
+                    <app-product-counter></app-product-counter>
+                    <button mat-button (click)="removeProduct(prod)" title="Remove from cart">Remove</button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
